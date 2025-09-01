@@ -66,7 +66,7 @@ extension BluetoothModel: CBCentralManagerDelegate {
         peripheralStatus = .connecting
         let name = p.name ?? "no name"
         print("Discovered \(name)")
-        if !(name.starts(with: "RWS") || name.starts(with: "RZS")) {
+        if !(name.starts(with: "RWS") || name.starts(with: "RZS") || name.starts(with: "DG-PRO")) {
             return
         }
         peripheral = p
